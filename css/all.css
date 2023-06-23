@@ -1,0 +1,143 @@
+body{
+  background-color:#E4A778;
+  display:flex;
+  justify-content:center;
+}
+
+::placeholder{
+  color:black;
+}
+
+/* hearder */
+.container{
+  display:flex;
+  flex-direction:column;
+  width:1000px;
+  height:500px;
+  align-items:center;
+  margin-top:30px;
+  border:2px solid black;
+  border-radius:20px;
+}
+
+.inputbox{
+  display:flex;
+}
+
+.bi-plus-circle{
+  font-size:30px;
+  cursor:pointer;
+}
+
+.items{
+  width:200px;
+  height:30px;
+  margin-right:2px;
+  border:none;
+  background-color:transparent;
+  border-bottom:2px solid black;
+}
+
+.Delete{
+  margin-left:85px;
+  border:none;
+  font-size:20px;
+  background-color:#670606;
+  color:#c41756;
+  border:2px solid black;
+  cursor:pointer;
+  box-shadow:2px 2px 0 black;
+}
+.Delete:hover{
+  background-color:#bd0909;
+  color:#eb085c;
+}
+.Delete:active{
+  background-color:#ac0404;
+  color:#eb085c;
+  box-shadow:0 0 0 black;
+}
+
+/* itemBox */
+.itemBox{
+  display:flex;
+  flex-direction:column;
+  overflow:auto;
+}
+/* 設定捲動軸寬度與高度 */
+.itemBox::-webkit-scrollbar{
+  width:10px;
+  background-color: transparent;
+}
+/* 捲動軸拖拉的部分 */
+/* .itemBox::-webkit-scrollbar-thumb {
+  background-color:none;
+} */
+/* 捲動軸軌道的部分 */
+/* .itemBox::-webkit-scrollbar-track {
+  background-color:none;
+} */
+.itemBox div{
+  display:flex;
+  position:relative;
+  width:620px;
+  height:50px;
+  background-color:#DEDC9D;
+  border:2px solid black;
+  margin:20px 0 0 0;
+  font-size:25px;
+  align-items:center;
+  padding:10px;
+}
+.edit{
+  position:absolute;
+  right:0;
+  border:none;
+  font-size:20px;
+  font-weight:700;
+  background-color:transparent;
+  cursor:pointer;
+  margin-right:120px;
+  background-image:linear-gradient(to right,rgb(235, 78, 104) , purple);
+  /* 將background-image的設定應用到文字上 */
+  -webkit-background-clip:text;
+  /* 設定文字填充顏色 */
+  -webkit-text-fill-color:transparent;
+}
+.Edit_Text{
+  color:orange;
+}
+.save{
+  position:absolute;
+  right:0;
+  top:0;
+  border:none;
+  font-size:20px;
+  font-weight:700;
+  background-color:transparent;
+  cursor:pointer;
+  background-image:linear-gradient(to right,rgb(235, 78, 104) , purple);
+  /* 將background-image的設定應用到文字上 */
+  -webkit-background-clip:text;
+  /* 設定文字填充顏色 */
+  -webkit-text-fill-color:transparent;
+}
+.remove{
+  position:absolute;
+  right:0;
+  border:none;
+  font-weight:700;
+  color:#DE0909;
+  font-size:20px;
+  background-color:transparent;
+  cursor:pointer;
+  margin-right:30px;
+  background-image:linear-gradient(to left,rgb(236, 10, 10) , rgb(137, 6, 28));
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.checkbox{
+  color:gray;
+  text-decoration:line-through;
+}
